@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☁ Weather</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0c49cfe382.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
+       
+</head>
+<body>
+    <div class="container">
+    <div class="weather-app">
+        <div class="header">
+            <div class="temperature-conversion">
+                <span class="fahrenheit">
+                    <a href="#" id="fahrenheit-link" style="text-decoration: none;"><strong> °F</strong></a> |
+    
+                </span>
+                <span class="celsius">
+                    <a href="#" id="celsius-link" style="text-decoration: none;">°C</a>
+
+                 </span>
+            </div>
+    
+                <span class="datetime" id="currentDate">
+                    Sunday 10:00pm
+                </span>
+                <button class="homeBtn"id="homeBtn">
+                    <i class="fas fa-home"></i>
+                </button>
+            <h3 id="temperature-description">
+              
+            </h3>
+            <h4 id="currentTemp">
+                
+            </h4>
+            <i class="fas fa-cloud main-icon"></i>
+            <h3 id="selectedCity">
+                
+            </h3>
+        </div>    
+        <div class="footer">
+            <div class="row">
+
+                <div class="card" style="width: 7rem;">
+            
+                    <div class="card-body">
+                     <h5 class="card-title">M</h5>
+                        <i class="fas fa-cloud-showers-heavy fa-card"></i>
+                        <p class="card-text">49°</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 7rem;">
+            
+                    <div class="card-body">
+                        <h5 class="card-title">T</h5>
+                        <i class="fas fa-snowflake fa-card"></i>
+                        <p class="card-text">32°</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 7rem;">
+                
+                    <div class="card-body">
+                        <h5 class="card-title">W</h5>
+                        <i class="fas fa-sun fa-card"></i>
+                        <p class="card-text">55°</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 7rem;">
+                
+                    <div class="card-body">
+                        <h5 class="card-title">Th</h5>
+                        <i class="fas fa-cloud fa-card"></i>
+                        <p class="card-text">44°</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 7rem;">
+                
+                    <div class="card-body">
+                        <h5 class="card-title">F</h5>
+                        <i class="fas fa-cloud-sun fa-card"></i>
+                        <p class="card-text">41°</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 7rem;">
+                
+                    <div class="card-body">
+                        <h5 class="card-title">S</h5>
+                        <i class="fas fa-cloud-sun-rain fa-card"></i>
+                        <p class="card-text">45°</p>
+                    </div>
+                </div>
+            </div>
+            <form id="search-form">
+                <input 
+                    type="search" 
+                    placeholder="Enter a city"
+                    autocomplete="off"
+                    autofocus="on"
+                    id="search-text-input"
+                />
+            </form>    
+        </div>    
+    </div>
+    </div>
+<script src="src/script.js"></script>
+</body>
+</html>
